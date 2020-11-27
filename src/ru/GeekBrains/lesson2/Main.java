@@ -84,12 +84,18 @@ public class Main {
 
     public static int[][] getArray(int size){
         int [][] arr = new int[size][size];
-        for (int i = 0; i < size; i++)
-            for (int j = 0; j < size; j++)
+        int main = 0;
+        int primary = size - 1;
+        for (int i = 0; i < size; i++) {
+            for (int j = 0; j < size; j++) {
+                arr[i][j] = 2;//(int) (Math.random() * 100);
+                arr[main][primary] = 1;
                 if (i == j)
                     arr[i][j] = 1;
-                else
-                    arr[i][j] = (int) (Math.random() * 100);
+            }
+            main++;
+            primary--;
+        }
         return arr;
     }
 
