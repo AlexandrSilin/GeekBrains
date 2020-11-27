@@ -1,3 +1,5 @@
+package ru.GeekBrains.lesson2;
+
 public class Main {
     public static void main(String[] args) {
         int[] arr1 = { 1, 1, 0, 0, 1, 0, 1, 1, 0, 0 };
@@ -26,7 +28,7 @@ public class Main {
         System.out.println("\n5. Поиск максимума и минимума в массиве" + "\nИсходный массив:");
         printArray(arr3);
         int[] maxMin = findMaxMin(arr3);
-        System.out.println("\nМаксимум = " + maxMin[0] + " " + ", минимум = " + maxMin[1]);
+        System.out.println("\nМаксимум = " + maxMin[1] + " " + ", минимум = " + maxMin[0]);
 
         System.out.println("\n6. true, если в массиве есть место, в котором сумма левой и правой части массива равны"
                 + "\nИсходный массив:");
@@ -36,7 +38,7 @@ public class Main {
         printArray(arr3);
         System.out.println("\nОтвет: " + checkBalance(arr3));
 
-        System.out.println("7. Сдвиг элементов на n позиций\nИсходный массив:");
+        System.out.println("\n7. Сдвиг элементов на n позиций\nИсходный массив:");
         printArray(pushArr);
         System.out.println("\nРезультат (свиг на 2 позиции влево):");
         printArray(pushValues(pushArr, 2));
@@ -106,7 +108,7 @@ public class Main {
     public static boolean checkBalance(int[] arr){
         int left = 0;
         int right = 0;
-        for (int count = 0; count < arr.length; count++) {
+        for (int count = 0; count < arr.length; count++)
             for (int i = 0; i < count; i++) {
                 left += arr[i];
                 for (int j = i; j < arr.length; j++)
@@ -115,8 +117,6 @@ public class Main {
                     return true;
                 right = 0;
             }
-
-        }
         return false;
     }
 
