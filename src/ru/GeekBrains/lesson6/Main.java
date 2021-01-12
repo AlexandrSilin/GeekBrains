@@ -1,7 +1,5 @@
 package ru.GeekBrains.lesson6;
 
-import java.math.RoundingMode;
-
 public class Main {
     public static void main(String[] args) {
         int cats = 0, dogs = 0;
@@ -33,6 +31,6 @@ public class Main {
             else
                 System.out.println(animal.name + " didn't swim " + Math.ceil(distance * 1000) / 1000 + "m");
         }
-        System.out.println("\nDogs: " + dogs + ", cats: " + cats);
+        System.out.println("\nDogs: " + dogs + ", cats: " + cats + ", count animals: " + animals.length);
     }
 }
