@@ -12,17 +12,17 @@ public class Dog extends Animal{
     }
 
     @Override
-    public boolean run(int distance) {
+    public boolean run(double distance) {
         return distance <= runDistance;
     }
 
     @Override
-    public boolean swim(int distance) {
+    public boolean swim(double distance) {
         return distance <= swimDistance;
     }
 
     @Override
-    public boolean jump(int distance) {
+    public boolean jump(double distance) {
         return distance <= jumpDistance;
     }
 

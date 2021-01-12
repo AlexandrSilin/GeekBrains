@@ -11,9 +11,9 @@ public abstract class Animal {
         this.color = color;
     }
 
-    public abstract boolean run(int distance);
+    public abstract boolean run(double distance);
 
-    public abstract boolean swim(int distance);
+    public abstract boolean swim(double distance);
 
-    public abstract boolean jump(int distance);
+    public abstract boolean jump(double distance);
 }
