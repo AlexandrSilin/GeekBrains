@@ -26,6 +26,7 @@ public class Plate {
             this.food = capacityPlate;
         else
             this.food += food;
+        System.out.println("Food was added");
     }
 
     public boolean decreaseFood(int appetite) {
